@@ -20,11 +20,11 @@ These instructions will get you a copy of the script up and running on your serv
     You can download the script directly to your server using `wget` or `curl`:
 
     ```bash
-    wget [https://raw.githubusercontent.com/lsmithx2/plesk-421-fix/refs/heads/main/nginx_apache_fix.sh](https://raw.githubusercontent.com/lsmithx2/plesk-421-fix/refs/heads/main/nginx_apache_fix.sh)
+    wget https://raw.githubusercontent.com/lsmithx2/plesk-421-fix/refs/heads/main/nginx_apache_fix.sh
     ```
     or
     ```bash
-    curl -O [https://raw.githubusercontent.com/lsmithx2/plesk-421-fix/refs/heads/main/nginx_apache_fix.sh](https://raw.githubusercontent.com/lsmithx2/plesk-421-fix/refs/heads/main/nginx_apache_fix.sh)
+    curl -O https://raw.githubusercontent.com/lsmithx2/plesk-421-fix/refs/heads/main/nginx_apache_fix.sh
     ```
 
 2.  **Make the script executable:**
