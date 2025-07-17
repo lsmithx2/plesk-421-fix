@@ -2,6 +2,17 @@
 
 This repository contains a simple bash script designed to address common SSL configuration issues on servers running both Nginx and Apache, specifically by ensuring proper `proxy_ssl_server_name` and `proxy_ssl_name` directives are set for Nginx.
 
+## Symptoms
+
+All websites show error:
+**421 Misdirected Request**
+
+The following error message is logged in domain's log (Plesk > Domains > example.com > Logs):
+`AH02032: Hostname default-203_0_113_2 (default host as no SNI was provided) and hostname www.example.com provided via HTTP have no compatible SSL setup`
+
+**Cause**
+In recent Apache version, Apache team has released fixes for CVEs that affected Apache + nginx functionality: new changes do not allow Apache process requests from nginx without a server name (`proxy_ssl_server_name` is disabled by default in nginx).
+
 ## 🚀 Getting Started
 
 These instructions will get you a copy of the script up and running on your server.
